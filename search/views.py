@@ -35,6 +35,7 @@ def getdata():
         'q': 'cricket',
         'key': settings.YOUTUBE_DATA_API_KEY,
         'maxResults': 21,
+        'publishedAfter': '2018-01-01T00:00:00Z',
         'order': 'date',
         'type': 'video'
     }

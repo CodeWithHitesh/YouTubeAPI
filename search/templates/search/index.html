@@ -75,11 +75,11 @@
     </div>
 
     <!-- Pagination -->
-    <nav aria-label="...">
-        <ul class="pagination">
-            <!-- Disable button if previous doesn't exists -->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <!-- Disable button if previous doesn't exists  -->
             {% if page_obj.has_previous %}
-            <li class="page-item">
+            <li class=" page-item">
                 <a class="page-link" href="?page=1" tabindex="-1">1</a>
             </li>
             <li class="page-item">
