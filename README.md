@@ -3,11 +3,11 @@ To make an API to fetch latest videos sorted in reverse chronological order of t
 
 ## Features 
 - Publish Time shows that the videos are fetched in reverse chronological order of their publishing date-time
-![Alt text](search\screenshots\dashboard.png?raw=true "Title")
+![alt text](https://github.com/CodeWithHitesh/YouTubeApi/blob/master/search/screenshots/dashboard.png?raw=true)
 - Pagination: 6 objects per page
-![Alt text](search\screenshots\hover.png?raw=true "Title")
+![alt text](https://github.com/CodeWithHitesh/YouTubeApi/blob/master/search/screenshots/hover.png?raw=true)
 - Hover over the description to see it completely
-![Alt text](search\screenshots\pagination.png?raw=true "Title")
+![alt text](https://github.com/CodeWithHitesh/YouTubeApi/blob/master/search/screenshots/pagination.png?raw=true)
 - Click over view button to open that video
 
 
