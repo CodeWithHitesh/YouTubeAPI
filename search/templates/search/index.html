@@ -24,6 +24,20 @@
                 font-size: 3.5rem;
             }
         }
+
+        /* To reduce the length of description */
+        #description {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* On hovering, set back to initial properties */
+        #description:hover {
+            white-space: normal;
+            overflow: visible;
+            overflow: initial;
+        }
     </style>
 
 </head>
@@ -36,17 +50,21 @@
                 {% for video in page_obj %}
                 <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
+                        <!-- Showing Thumbnail -->
                         <img class="bd-placeholder-img card-img-top" width="100%" height="225"
                             src="{{ video.thumbnail }}" preserveAspectRatio="xMidYMid slice" focusable="false"
                             role="img" aria-label="Placeholder: Thumbnail"></img>
+                        <!-- Contains all details of any video -->
                         <div class="card-body">
                             <p class="card-text">{{ video.title }}</p>
+                            <p class="card-text" id="description"><em>{{ video.description }}</em></p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <a type="button" href="{{ video.url }}"
                                         class="btn btn-sm btn-outline-secondary">View</a>
                                 </div>
                                 <small class="text-muted">{{ video.duration }} mins</small>
+                                <small class="text-muted">{{ video.publishedAt }}</small>
                             </div>
                         </div>
                     </div>
@@ -56,8 +74,10 @@
         </div>
     </div>
 
+    <!-- Pagination -->
     <nav aria-label="...">
         <ul class="pagination">
+            <!-- Disable button if previous doesn't exists -->
             {% if page_obj.has_previous %}
             <li class="page-item">
                 <a class="page-link" href="?page=1" tabindex="-1">1</a>
@@ -74,12 +94,12 @@
             </li>
             {% endif %}
 
-
+            <!-- Current page number -->
             <li class="page-item active">
                 <a class="page-link" href="#">{{ page_obj.number }}<span class="sr-only">(current)</span></a>
             </li>
 
-
+            <!-- Disable button if next doesn't exists -->
             {% if page_obj.has_next %}
             <li class="page-item">
                 <a class="page-link" href="?page={{ page_obj.next_page_number }}">&raquo;</a>

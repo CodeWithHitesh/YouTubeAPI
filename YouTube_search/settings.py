@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -120,4 +120,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Enter your API key here by following the steps mentioned in ReadMe.
 YOUTUBE_DATA_API_KEY = 'AIzaSyA7WCnoJzxv4Wj9O8UcowCljGoAr9loQeo'
