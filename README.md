@@ -3,11 +3,11 @@ To make an API to fetch latest videos sorted in reverse chronological order of t
 
 ## Features 
 - Publish Time shows that the videos are fetched in reverse chronological order of their publishing date-time
-![alt text](search\screenshots\dashboard.png)
+![Alt text](search\screenshots\dashboard.png?raw=true "Title")
 - Pagination: 6 objects per page
-![alt text](search\screenshots\hover.png)
+![Alt text](search\screenshots\hover.png?raw=true "Title")
 - Hover over the description to see it completely
-![alt text](search\screenshots\pagination.png)
+![Alt text](search\screenshots\pagination.png?raw=true "Title")
 - Click over view button to open that video
 
 
